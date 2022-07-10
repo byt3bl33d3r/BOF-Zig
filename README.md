@@ -3,7 +3,7 @@
 
 Build `bof.zig` with the following command in the directory with `beacon.h`
 
-    zig build-obj -isystem . -O ReleaseSmall --strip -target x86_64-windows helloworld.zig
+    zig build-obj --library c -isystem . -O ReleaseSmall --strip -target x86_64-windows bof.zig
 
 This will product a `bof.obj` file.
 
